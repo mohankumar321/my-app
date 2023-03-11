@@ -2,7 +2,7 @@
 import './App.css';
 
 function App() {
-  var opacity ="";
+ 
   
   return (
     <div className="App">
@@ -31,6 +31,7 @@ function App() {
    
     <Pricetable 
     cost="PLUS"
+    second="✖"
     rightnew2="✔"
     price="$9"
     user2="5Users"
@@ -138,7 +139,7 @@ function Pricetable(props) {
         </div>
         <div className='text status'>
        <span className='text status1 opacity'>{props.symbol1}&nbsp;{props.status1}</span>
-        <span className='text status2'>{props.symbol2}&nbsp;{props.status2}</span>
+        <span className='text status2'>{props.second}&nbsp;{props.status2}</span>
         <span className='text status3'>{props.symbol3}&nbsp;{props.status3}</span>
 
 
